@@ -1,0 +1,53 @@
+step:1
+First Of all Create a Database Name=FastPay in phymyadmin 
+click on that database
+
+step 2: excute the following command
+
+
+1:Create table for Account 
+
+CREATE TABLE `account` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `Name` varchar(255) NOT NULL,
+ `Email` varchar(255) NOT NULL,
+ `MbNo` varchar(12) NOT NULL,
+ `State` varchar(30) NOT NULL,
+ `City` varchar(30) NOT NULL,
+ `pincode` int(6) NOT NULL,
+ `Password` varchar(30) NOT NULL,
+ `Balance` int(11) NOT NULL DEFAULT 10000,
+ `Que_Ans` varchar(30) NOT NULL,
+ PRIMARY KEY (`id`)
+) ;
+
+
+
+2:Create table for transaction
+
+CREATE TABLE `transcation` (
+ `Transcation_id` int(30) NOT NULL AUTO_INCREMENT,
+ `User_id` int(30) NOT NULL,
+ `Name` varchar(255) NOT NULL,
+ `Company` varchar(255) NOT NULL,
+ `DBCR` varchar(9) NOT NULL,
+ `Money` int(7) NOT NULL,
+ `Date_Time` datetime NOT NULL,
+ PRIMARY KEY (`Transcation_id`),
+ KEY `User_id` (`User_id`),
+ CONSTRAINT `transcation_ibfk_1` FOREIGN KEY (`User_id`) REFERENCES `account` (`id`)
+) ;
+
+3:
+CREATE TABLE `airtel` (
+ `id` int(30) NOT NULL AUTO_INCREMENT,
+ `Name` varchar(255) NOT NULL,
+ `DBCR` varchar(9) NOT NULL,
+ `Money` int(7) NOT NULL,
+ `Date_Time` datetime NOT NULL,
+ PRIMARY KEY (`id`)
+);
+
+Similary execute the same query for jio,idea,Airtel
+
+
