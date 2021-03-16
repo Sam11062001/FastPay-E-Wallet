@@ -1,0 +1,112 @@
+/* Login Page */
+body{
+    margin: 0;
+    padding: 0;
+    background: url("login-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:  sans-serif;
+}
+.form-group{
+    font-size: 13px;
+    margin: 2px;
+}
+.signup-box{
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    color: #000;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 40px;
+    border-radius: 7px;
+}
+.form-contain{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    border-right: 0.5px lightgray solid
+}
+h1{
+    /* margin-top: 50px; */
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.signup-box p{
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 13px;
+}
+.signup-box input[type="text"], input[type="password"], input[type="email"]{
+    width: 80%;
+    margin-bottom: 5px;
+    padding-bottom:2px;
+    /* margin-top: 2px; */
+}
+.signup-box input
+{
+    /* padding-right: 50%; */
+    border: none;
+    color: gray;
+    border-bottom: 1px solid gray;
+    /* background: transparent; */
+    outline: none;
+    font-size: 13px;
+    height: 27px;
+}
+/* .login-box input[type="text"], input[type="password"]:focussignupolor: #000;
+} */
+.form-submit input[type="submit"]
+{
+    border: none;
+    width:50%;
+    outline: none;
+    height: 30px;
+    background: blueviolet;
+    color: aliceblue;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 17px;
+    margin-top: 25px;
+    
+}
+.form-submit input[type="submit"]:hover
+{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.signup-box a{
+    text-decoration: none;
+    color: gray;
+    line-height: 30px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.signup-box a:hover
+{
+    color: #000;
+}
+.form-submit{
+    padding-top: 15%;
+    width:50%;
+    box-sizing: border-box;
+    float: right;
+    text-align: center;
+}
+.login{
+    margin-top: 20px;
+    color: gray;
+    font-size: 12px;
+    text-align-last: center;
+    padding-bottom: 30px;
+}
+
+

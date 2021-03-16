@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: vw; */
+    margin: 0;
+    padding-top: 75px;
+    background: url("login-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:  sans-serif;
+}
+.header {
+    /* margin-top: 0; */
+    width: 100%;
+    padding: 20px 0px;
+    top: 0;
+    height: 75px;
+    position: fixed;
+    /* text-align: center; */
+    background: white;
+    box-shadow: 0px 0px 2px black;
+}
+.header h1{
+    padding-left: 10px;
+    float: left;
+}
+.header h3{
+    padding-top: 7px;
+    padding-right: 15px;
+    float: right;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-decoration-color: black;
+    line-height: 30px;
+    font-weight: bold;
+    /* margin-top: -30px; */
+}
+.header h3:hover
+{
+    opacity: 80%;
+}
+
+.main-block{
+    height: 800px;
+    margin: 20px;
+    margin-top: 30px;
+    margin-left: 2.5%;
+    width: 95%;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    padding: 20px;
+    /* padding-left: 25px; */
+}
+.topnav{
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -6px #222;
+    margin-bottom: 20px;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    box-shadow: 3px 0px 5px -5px #222;
+}
+.topnav :last-child{
+    float: right;
+}
+.left-sidebar{
+    width: 25%;
+    height: 92%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 10px;
+    box-shadow: 3px 0px 5px -5px #222;
+}
+.main-content{
+    width: 75%;
+    float: right;
+    /* overflow: hidden; */
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+
